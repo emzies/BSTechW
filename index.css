@@ -386,7 +386,7 @@ nav img {
  .description .text-1 {
      font-family: Georgia, 'Times New Roman', Times, serif;
      flex: 1;
-     padding: 10px 0 0 10px; 
+     padding: 60px 0 0 10px; 
      letter-spacing: 2px;
      float: left;
  }
@@ -419,7 +419,7 @@ nav img {
  .description .text-1 p {
      font-size: 1.5em;
      padding: 20px 0 0 0 ;
-     width: 400px;
+     width: 700px;
  }
 
  
@@ -491,11 +491,12 @@ nav img {
 }
 
    .portfolio-container {
-    background-image: url(images/portfolio/background8.jpg);
+    /* background-image: url(images/portfolio/background8.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #5885AF;
-    background-blend-mode: multiply;
+    background-blend-mode: multiply; */
+    background: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%);
     margin: 0;
     /* padding: 0; */
     display: flex;
@@ -786,11 +787,17 @@ nav img {
   } */
 
   #contact {
+    /* background-image: url(images/contact/contact.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #5885AF;
+    background-blend-mode: multiply; */
+    background: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%);
     display: flex;
     align-items: center;
     /* justify-content: space-around; */
     height: 100vh; /* Full height of the viewport */
-    background-color: #003B73; /* Darker background color */
+   /* Darker background color */
     color: white; /* Set text color to white */
 }
 
