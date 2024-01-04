@@ -24,12 +24,12 @@ body {
 
 .logo {
      z-index: 2;
-     padding-left: 20px;
+     padding-left: 100px;
    }
 
 h1 {
   font-size: 6rem;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Times New Roman', sans-serif;
   letter-spacing: -2px;
   padding-top: 50px;
   color: white;
@@ -46,13 +46,14 @@ h1 {
   }
 
 .header-container .text {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Times New Roman', sans-serif;
   font-size: 1.8rem;
   font-weight: bolder;
   color: white;
   text-align: justify;
-  margin: 20px;
+  /* margin: 20px; */
   letter-spacing: 1px;
+  padding: 0 100px;
 }
 
 h1 span {
@@ -90,7 +91,7 @@ nav img {
 }
    
    li {
-    font-family: 'Lora', 'serif';
+    font-family: 'Times New Roman', sans-serif;
     font-size: 15px;
     font-weight: 500;
     text-transform: uppercase;
@@ -191,18 +192,19 @@ nav img {
 }
 
 .title {
-    font-family: 'Poppins', sans-serif;
+     font-family: 'Times New Roman', sans-serif;
      font-size: 40px;
      text-transform: uppercase;
      text-align: center;
      padding-top: 80px;
-     letter-spacing: 2px;
+     letter-spacing: 1PX;
 }
 
  .services-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
+  padding: 0 100px;
   height: 30vh;
 }
 
@@ -220,10 +222,11 @@ nav img {
   color: #003B73;
 }
  .service p {
+     font-family: 'Times New Roman', sans-serif;
      font-size: 20px;
      text-transform: uppercase;
      font-weight: bold;
-     letter-spacing: 2px;
+     letter-spacing: 1px;
  }
  
  .description-container {
@@ -243,14 +246,13 @@ nav img {
      margin: 20px 20px;
  }
  .description .text-1 {
-     font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Times New Roman', sans-serif;
      flex: 1;
      padding: 60px 0 0 10px; 
      letter-spacing: 2px;
      float: left;
  }
  
-
  .description .image img {
   max-width: 30%; 
   border-radius: 8px;
@@ -258,18 +260,21 @@ nav img {
 }
 
  .description .text-1 .sysdev {
+     font-family: 'Times New Roman', sans-serif;
      font-size: 2em;
      text-transform: uppercase;
      color: #1F3541;
  }
 
  .description .text-1 .branding {
+     font-family: 'Times New Roman', sans-serif;
      font-size: 2em;
      text-transform: uppercase;
      color: #1F3541;
  }
 
  .description .text-1 .netsecurity {
+     font-family: 'Times New Roman', sans-serif;
      font-size: 2em;
      text-transform: uppercase;
      color: #1F3541;
@@ -332,22 +337,24 @@ nav img {
     background: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%);
     margin: 0;
     display: flex;
+
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 }
 
 .portfolio {
+    font-family: 'Times New Roman', sans-serif;
     text-align: center;
     width: 100%;
-    font-family: 'Poppins', sans-serif;
+    
     padding-top: 70px;
     padding-bottom: 20px;
     letter-spacing: 2px;
 }
 
 .portfolio .port-head {
-  font-size: 40px;
+    font-size: 40px;
     color: white;
     text-transform: uppercase;
 
@@ -365,7 +372,7 @@ nav img {
     position: relative;
     overflow: hidden;
     max-width: 300px;
-    margin: 0 50px 20px 70px;
+    margin: 0 30px 10px 50px;
 }
 
 .image-container .card {
@@ -375,6 +382,7 @@ nav img {
   border-color: none;
   background-color: #f8f9fa;
   min-height: 300px;
+  
 }
 
 .image-container img {
@@ -485,7 +493,7 @@ nav img {
   }
 
   .about-container h2 {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Times New Roman', sans-serif;
     font-size: 40px;
     padding-top: 10px;
     text-transform: uppercase;
@@ -495,6 +503,7 @@ nav img {
   }
 
   .about-container p {
+    font-family: 'Times New Roman', sans-serif;
     font-style: italic;
   }
 
@@ -502,7 +511,8 @@ nav img {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin: 20px 0;
+    padding: 20px 100px;
+    
   }
 
 
@@ -595,15 +605,17 @@ nav img {
 .contact-container {
     display: flex;
     width: 100%;
+    justify-content: space-between;
 }
 
 .contact-container div {
-    width: 50%;
-    padding: 0 20px;
+    width: 48%;
+    /* padding: 0 20px; */
 }
 
 .contact-container h2,
 .contact-container p {
+  font-family: 'Times New Roman', sans-serif;
     margin: 0;
 }
 
@@ -618,6 +630,77 @@ nav img {
 .icon {
     font-size: 24px;
     margin-right: 10px;
+}
+
+#contact-form form {
+  display: flex;
+  flex-direction: column;
+  /* margin-top: 50px; */
+  padding-top: 40px;
+}
+
+#contact-form label,
+#contact-form input,
+#contact-form textarea {
+  /* margin-bottom: 5px; */
+}
+
+#contact-form input,
+#contact-form textarea,
+#contact-form button {
+  width: 270px;
+  /* padding: 2px; */
+}
+
+#contact-form .below input,
+#contact-form .below textarea,
+#contact-form .below button {
+  width: 600px;
+}
+
+#contact-form textarea {
+  height: 80px;
+}
+
+.name-inputs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-group label {
+  /* display: block; */
+  margin-bottom: 5px;
+  /* font-weight: bold; */
+}
+
+.input-group input {
+  width: 100%;
+  padding: 5px;
+  /* margin-bottom: 15px; */
+}
+
+.input-group2 {
+  margin-left: 243px;
+
+}
+
+.input-group2 input {
+  padding: 5px;
+  /* margin-bottom: 15px; */
+}
+
+
+#contact-form button {
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  height: 50px;
+}
+
+#contact-form button:hover {
+  background-color: #45a049;
 }
 
 #map iframe {
