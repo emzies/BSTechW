@@ -1,19 +1,23 @@
 document.addEventListener("DOMContentLoaded", function () {
-     const services = document.querySelectorAll(".service");
-     const descriptions = document.querySelectorAll(".description");
- 
-     services.forEach((service, index) => {
-         service.addEventListener("click", function () {
-             // Hide all descriptions
-             descriptions.forEach(desc => {
-                 desc.style.display = "none";
-             });
- 
-             // Toggle the display of the clicked service's description
-             descriptions[index].style.display = "block";
-         });
-     });
- });
+  const descriptions = document.querySelectorAll(".description");
+
+  // Set the first service description to be visible by default
+  descriptions[0].classList.add("visible");
+
+  const services = document.querySelectorAll(".service");
+
+  services.forEach((service, index) => {
+    service.addEventListener("click", function () {
+      // Hide all descriptions
+      descriptions.forEach(desc => {
+        desc.classList.remove("visible");
+      });
+
+      // Toggle the display of the clicked service's description
+      descriptions[index].classList.add("visible");
+    });
+  });
+});
 
  function toggleNav() {
     var navList = document.getElementById("navList");

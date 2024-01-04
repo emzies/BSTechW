@@ -215,7 +215,7 @@ nav img {
 }
 
  .service .fa-solid {
-  margin: 0 50px 20px 70px;
+  margin: 50px 50px 20px 70px;
   width: 200px;
   height: auto;
   border-radius: 8px;
@@ -237,7 +237,7 @@ nav img {
      background-size: 100%;
      border-radius: 15px;
      width: 80dvw;
-     margin: 0 15% 0 10%;
+     margin: 5% 15% 0 10%;
      box-shadow: 0 0 10px #055C9D;
  }
  
@@ -245,16 +245,21 @@ nav img {
      display: none;
      margin: 20px 20px;
  }
+
+ .description.visible {
+  display: flex;
+ }
+
  .description .text-1 {
-  font-family: 'Times New Roman', sans-serif;
+     font-family: 'Times New Roman', sans-serif;
      flex: 1;
-     padding: 60px 0 0 10px; 
+     padding: 10px 0 0 10px; 
      letter-spacing: 2px;
      float: left;
  }
  
  .description .image img {
-  max-width: 30%; 
+  max-width: 55%; 
   border-radius: 8px;
   float: right;
 }
