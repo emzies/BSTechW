@@ -311,11 +311,9 @@ li a:hover {
 }
 
 .portfolio-container {
+  padding-block: 4rem;
   background: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%);
   margin: 0;
-  display: flex;
-
-  flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
 }
