@@ -221,7 +221,6 @@ li a:hover {
 }
 
 .description-container {
-  display: flex;
   justify-content: space-between;
   align-items: center;
   background-size: 100%;
@@ -229,17 +228,7 @@ li a:hover {
   box-shadow: 0 0 10px #055c9d;
 }
 
-.description {
-  display: none;
-  margin: 20px 4rem;
-}
-
-.description.visible {
-  display: flex;
-  align-items: center;
-}
-
-.description .image img {
+.description-container img {
   max-width: 20rem;
   border-radius: 8px;
 }
