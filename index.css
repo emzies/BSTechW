@@ -215,45 +215,33 @@ li a:hover {
 }
 .service p {
   /* font-family: "Times New Roman", sans-serif; */
-  font-size: 20px;
-  text-transform: uppercase;
-  font-weight: bold;
+  font-size: 18px;
+  font-weight: medium;
   letter-spacing: 1px;
 }
 
 .description-container {
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   background-size: 100%;
   border-radius: 15px;
-  width: 80dvw;
-  margin: 5% 15% 0 10%;
   box-shadow: 0 0 10px #055c9d;
 }
 
 .description {
   display: none;
-  margin: 20px 20px;
+  margin: 20px 4rem;
 }
 
 .description.visible {
   display: flex;
-}
-
-.description .text-1 {
-  /* font-family: "Times New Roman", sans-serif; */
-  flex: 1;
-  padding: 10px 0 0 10px;
-  letter-spacing: 2px;
-  float: left;
+  align-items: center;
 }
 
 .description .image img {
-  max-width: 55%;
+  max-width: 20rem;
   border-radius: 8px;
-  float: right;
 }
 
 .description .text-1 .sysdev {
