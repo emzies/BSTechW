@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const descriptions = document.querySelectorAll(".description");
+  const descriptions = document.querySelectorAll(".description-container");
 
   // Set the first service description to be visible by default
   descriptions[0].classList.add("visible");
@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
   services.forEach((service, index) => {
     service.addEventListener("click", function () {
       // Hide all descriptions
-      descriptions.forEach(desc => {
+      descriptions.forEach((desc) => {
         desc.classList.remove("visible");
       });
 
@@ -19,16 +19,15 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
- function toggleNav() {
+function toggleNav() {
+  var navList = document.getElementById("navList");
+  navList.classList.toggle("show");
+}
+
+// Close nav links after clicking a link
+document.querySelectorAll(".nav-links ul li a").forEach(function (link) {
+  link.addEventListener("click", function () {
     var navList = document.getElementById("navList");
-    navList.classList.toggle("show");
-  }
-  
-  // Close nav links after clicking a link
-  document.querySelectorAll(".nav-links ul li a").forEach(function(link) {
-    link.addEventListener("click", function() {
-      var navList = document.getElementById("navList");
-      navList.classList.remove("show");
-    });
+    navList.classList.remove("show");
   });
- 
+});

@@ -221,8 +221,7 @@ li a:hover {
 }
 
 .description-container {
-  justify-content: space-between;
-  align-items: center;
+  display: none;
   background-size: 100%;
   border-radius: 15px;
   box-shadow: 0 0 10px #055c9d;
@@ -231,6 +230,10 @@ li a:hover {
 .description-container img {
   max-width: 20rem;
   border-radius: 8px;
+}
+
+.description-container.visible {
+  display: block;
 }
 
 .description .text-1 .sysdev {
